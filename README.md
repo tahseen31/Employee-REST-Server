@@ -21,4 +21,23 @@
 ##### Configuration:
 
 1. H2 database can be accessed through "http://localhost:8080/h2-console/"
-![h2console](h2console.png)
+<img width="372" alt="h2console" src="https://user-images.githubusercontent.com/63615375/113372143-f4877580-9335-11eb-9ea0-b5308a4da0d1.PNG">
+
+<img width="684" alt="h2" src="https://user-images.githubusercontent.com/63615375/113372155-f94c2980-9335-11eb-81cb-fbf73f8bb209.PNG">
+
+
+
+2. Database path configured in applications.properties file
+
+
+#### Installation using Maven
+
+1. Download the source code
+2. run "mvn clean"
+3. Build Project
+4. Run main file
+
+#### Installation using jar
+
+1. Run the jar file using "java -jar springboot-crud-restful-webservices-0.0.1-SNAPSHOT.jar"
+2. Server will start at http://localhost:8080/server/
