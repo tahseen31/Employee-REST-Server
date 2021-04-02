@@ -17,7 +17,7 @@
 
 #### Database
 
-1. H2 - Data is stored in memory, on startup Repository is populated with 2 active and one inactive employee details
+1. H2 - Data is stored in memory, on startup Repository is populated with 3 employees
 ##### Configuration:
 
 1. H2 database can be accessed through "http://localhost:8080/h2-console/"
@@ -36,8 +36,23 @@
 2. run "mvn clean"
 3. Build Project
 4. Run main file
+5. To create Jar file, run: "mvn package" and a jar file will be created in "target" folder
 
 #### Installation using jar
 
 1. Run the jar file using "java -jar springboot-crud-restful-webservices-0.0.1-SNAPSHOT.jar"
 2. Server will start at http://localhost:8080/server/
+
+Screenshots:
+1. GET Request<img width="841" alt="get" src="https://user-images.githubusercontent.com/63615375/113372260-3d3f2e80-9336-11eb-9635-97c9c04a40bf.PNG">
+2. GET by Employee id<img width="832" alt="getById" src="https://user-images.githubusercontent.com/63615375/113372302-5942d000-9336-11eb-90bd-a19e363abc82.PNG">
+3. Create an employee <img width="823" alt="create" src="https://user-images.githubusercontent.com/63615375/113373016-e9354980-9337-11eb-9933-ad32168ec97c.PNG">
+4. Update Employee details <img width="823" alt="update" src="https://user-images.githubusercontent.com/63615375/113373082-1255da00-9338-11eb-853a-1a7ae156c0d3.PNG">
+5. Delete an Employee <img width="480" alt="delete1" src="https://user-images.githubusercontent.com/63615375/113373302-8b553180-9338-11eb-8e88-753df9994698.PNG">
+6. <img width="564" alt="delete2" src="https://user-images.githubusercontent.com/63615375/113373313-9019e580-9338-11eb-9ed6-8b21e31bfada.PNG">
+
+
+
+
+
+
