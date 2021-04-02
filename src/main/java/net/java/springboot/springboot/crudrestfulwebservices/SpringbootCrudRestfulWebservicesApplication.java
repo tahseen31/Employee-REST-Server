@@ -24,9 +24,9 @@ public class SpringbootCrudRestfulWebservicesApplication {
 	CommandLineRunner runner(EmployeeRepository repository) {
 		return args -> {
 			
-			repository.save(new Employee("Jane", "Elizabeth", "Doe", "06-06-1996", "09-01-1996", true));
-			repository.save(new Employee("Inactive", "lisa", "kudrow", "06-06-1996", "09-01-1996", false));
-			repository.save(new Employee("joey", "", "Tribiani", "06-06-1996", "09-01-1996", true));
+			repository.save(new Employee("Jane", "Elizabeth", "Doe", "06-06-1996", "09-01-1996"));
+			repository.save(new Employee("Inactive", "lisa", "kudrow", "06-06-1996", "09-01-1996"));
+			repository.save(new Employee("joey", "", "Tribiani", "06-06-1996", "09-01-1996"));
 			
 			
 			

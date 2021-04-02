@@ -41,15 +41,14 @@ public class Employee {
 		super();
 		
 	}
-	public Employee(String firstName, String middleInitial, String lastName, String dateOfBirth, String dateOfEmployment,
-			boolean isActive) {
+	public Employee(String firstName, String middleInitial, String lastName, String dateOfBirth, String dateOfEmployment) {
 		super();
 		this.firstName = firstName;
 		this.middleInitial = middleInitial;
 		this.lastName = lastName;
 		this.dateOfBirth = dateOfBirth;
 		this.dateOfEmployment = dateOfEmployment;
-		this.isActive = isActive;
+		this.isActive = true;
 
 	}
 	public long getId() {

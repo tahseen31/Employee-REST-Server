@@ -64,6 +64,7 @@ public class EmployeeController {
 	 */
 	@PostMapping("/employees")
 	public Employee createEmployee(@Valid @RequestBody Employee employee) {
+		employee.setActive(true);
 		return employeeRepository.save(employee);	
 	}
 	
@@ -91,7 +92,7 @@ public class EmployeeController {
 	 * @PathVariable employee id to be deleted
 	 */
 	@DeleteMapping("/employees/{id}")
-	public ResponseEntity deleteEmployee(@PathVariable(value = "id") long employeeId, @RequestBody Employee employeeDetails,
+	public ResponseEntity deleteEmployee(@PathVariable(value = "id") long employeeId,
 			@RequestHeader(value="Authorization") String authorizationHeader) throws ResourceNotFoundException {
 		Employee employee = employeeRepository.findById(employeeId).orElseThrow(() -> new ResourceNotFoundException("Employee not found for employee: " + employeeId));
 		employee.setActive(false);
